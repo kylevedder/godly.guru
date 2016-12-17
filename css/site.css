@@ -1,12 +1,32 @@
 @import url("equity.css");
 
 html, body, #splash, #splash-content {
+    background-color: #FFFFFF;
     height: 100%;
 }
 
+.btn-round-lg{
+    border-radius: 22.5px;
+}
+
 h2 {
-    font-family: "equity-text";
     font-size: 30px;
+}
+
+#spokentext {
+    font-family: "equity-text";
+    font-style: italic;
+    font-size: 30px;
+    word-wrap: break-word;
+    background-color: #ecf0f1;
+}
+
+.quote {
+    padding-top: 20px;
+}
+
+.text {
+    font-family: "equity-text";
 }
 
 #splash {
