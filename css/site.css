@@ -36,7 +36,8 @@ h2 {
 
 #splash-content {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
+    padding-top: 50px;
     white-space: nowrap;
 }
 
