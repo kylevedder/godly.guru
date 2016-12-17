@@ -1,0 +1,25 @@
+@import url("equity.css");
+
+html, body, #splash, #splash-content {
+    height: 100%;
+}
+
+h2 {
+    font-family: "equity-text";
+    font-size: 30px;
+}
+
+#splash {
+    margin: 0 auto;
+    display: table;
+}
+
+#splash-content {
+    display: table-cell;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
