@@ -1,12 +1,21 @@
 var prevQuoteIndex = -1;
 
-function setQuote() {
-    var currentQuoteIndex = Math.floor(Math.random() * data.length);
-    while (prevQuoteIndex == currentQuoteIndex) {
-        currentQuoteIndex = Math.floor(Math.random() * data.length);
-    }
-    prevQuoteIndex = currentQuoteIndex;
-    document.getElementById("spokentext").innerHTML=data[currentQuoteIndex].replace(/\n/g, "<br/>");
+
+function getQuote() {
+   index = parseInt(Math.random() * quotes.length);
+   while (index === prevQuoteIndex) {
+       index = parseInt(Math.random() * quotes.length);  
+   }
+   prevQuoteIndex = index;
+   return quotes[index];
 }
 
-setQuote();
+function setText() {
+    document.getElementById("spokentext").innerHTML = getQuote();
+}
+
+document.getElementById("advice").addEventListener("click", function(){
+    setText();
+});
+
+setText();

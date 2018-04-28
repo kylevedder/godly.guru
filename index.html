@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-     <head>
-     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,
-     user-scalable=0">
-     <title>GODLY.GURU</title>
-     <!-- Bootstrap -->
-<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<!-- Site CSS -->
-<link href="css/site.css" rel="stylesheet">
-<script type="text/javascript" src="data/quotes.js"></script>
-<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Advice from the godly guru">
+        <meta name="author" content="Kyle Vedder">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>GODLY.GURU</title>
     </head>
-    <body>
-        <div id="splash">
-            <div id="splash-content">
-                <div class="center">
-                    <h2 class="text">GET ADVICE FROM THE GURU:</h2>
-                    <button type="button" class="btn btn-primary btn-round-lg btn-lg text"
-                            onclick="setQuote()">Speak</button>
-                    <div class="quote center">
-                        <p id="spokentext">Always test your Javascript.</p>
-                    </div>
+    <!-- Dirty style hack to ensure lack of CSS does not make the layout look bad. -->
+    <body style="font-family: monospace;" >
+        <div class="wrapper">
+            <div class="splash">
+                <h2 class="text">GET ADVICE FROM THE GURU:</h2>
+                <button type="button" id="advice">
+                    Speak
+                </button>
+                <div class="quote">
+                    <p id="spokentext">Always test your Javascript.</p>
                 </div>
             </div>
         </div>
     </body>
-    <script type="text/javascript" src="js/page.js"></script>
+    <script type="text/javascript" src="quotes.json"></script>
+   <script type="text/javascript" src="js/page.js"></script>
 </html>
